@@ -16,7 +16,7 @@ if st.button("Convert Kg"):
     results = Kg * 2.2
     st.write(f"lbs: {results:.2f}")
 
-st.title("Lbs to kg")
+st.title("Lbs to Kg")
 Lbs = st.number_input("Enter Weight in Lbs", min_value=0, step=1, value=0)
 
 if st.button("Convert Lbs"):
