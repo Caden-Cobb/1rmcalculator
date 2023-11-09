@@ -10,4 +10,3 @@ if st.button("Calculate 1RM"):
     st.write(f"Your 1RM is: {results:.2f}")
 
 
-# 1RM = weight / ( 1.0278 – 0.0278 × reps )
