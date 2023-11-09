@@ -1,14 +1,15 @@
-print("Weight\n")
+import streamlit as st
 
-Weight = input()
+st.title("1RM Calculator")
 
-print("Reps\n")
+st.write("Enter your Weight:")
+weight = st.number_input("", value=0, step=1)
 
-Reps = input()
+st.write("Enter your Reps:")
+reps = st.number_input("", value=0, step=1)
 
-Results = float(Weight) / ( 1.0278 - 0.0278 * float(Reps) )
-
-print("Your 1rm is", Results)
-
+if st.button("Calculate 1RM"):
+    results = weight / (1.0278 - 0.0278 * reps)
+    st.write(f"Your 1RM is: {results:.2f}")
 
 # 1RM = weight / ( 1.0278 – 0.0278 × reps )
