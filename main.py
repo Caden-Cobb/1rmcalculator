@@ -1,5 +1,5 @@
 import streamlit as st
-st.image('./header.png', caption='Header Image', use_column_width=True)
+st.image('./header.png', caption='Making History', use_column_width=True)
 st.title("1RM Calculator")
 
 weight = st.number_input("Enter your Weight", min_value=0, step=1, value=0)
