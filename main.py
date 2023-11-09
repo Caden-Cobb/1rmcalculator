@@ -10,8 +10,15 @@ if st.button("Calculate 1RM"):
     st.write(f"Your 1RM is: {results:.2f}")
 
 st.title("Kg to Lbs")
-Kg = st.number_input("Enter Kg Weight", min_value=0, step=1, value=0)
+Kg = st.number_input("Enter Weight in Kg", min_value=0, step=1, value=0)
 
 if st.button("Convert"):
     results = Kg * 2.2
+    st.write(f"lbs: {results:.2f}")
+
+st.title("Lbs to kg")
+Lbs = st.number_input("Enter Weight in Lbs", min_value=0, step=1, value=0)
+
+if st.button("Convert"):
+    results = Lbs / 2.2
     st.write(f"lbs: {results:.2f}")
