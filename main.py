@@ -11,7 +11,6 @@ if st.button("Calculate 1RM"):
 
 st.title("Kg to Lbs")
 Kg = st.number_input("Enter Kg Weight", min_value=0, step=1, value=0)
-Lbs = st.number_input("Enter Lbs Reps", min_value=0, step=1, value=0)
 
 if st.button("Convert"):
     results = Kg * 2.2
